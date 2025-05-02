@@ -115,6 +115,7 @@
 /* Pour le haut de la calculette */
 main div:nth-of-type(1) {
     display: grid;
+    width: 1000px;
     border: 3px solid black;
     grid-template-columns: 150px 150px 150px;
     grid-template-rows: 50px;
@@ -125,12 +126,12 @@ main div:nth-of-type(1) {
     font-size: x-large;
     text-align: center;
     padding: 0.25rem;
-    padding-bottom: 2rem;
 }
 
 /* Pour les chiffres de 1 à 8 */
 main div:nth-of-type(2) {
     display: grid;
+    width: 1000px;
     border: 3px solid black;
     grid-template-columns: repeat(8, 50px);
     grid-template-rows: 50px;
@@ -141,7 +142,6 @@ main div:nth-of-type(2) {
     font-size: x-large;
     text-align: center;
     padding: 0.25rem;
-    padding-bottom: 2rem;
 }
 
 /* Pour placer les boutons de la calculette */
@@ -151,5 +151,5 @@ main div:nth-of-type(3) {
 
 /* Pour centrer les divs au centre */
 .center {
-    text-align: center;
+    align-items: center;
 }
