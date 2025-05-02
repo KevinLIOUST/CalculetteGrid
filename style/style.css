@@ -1,0 +1,257 @@
+/* Importation de la police d'écriture */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Différents styles de la police d'écriture */
+.barlow-condensed-thin {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-extralight {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-light {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-regular {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-medium {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-semibold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-bold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-extrabold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-black {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-thin-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-extralight-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-light-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-regular-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-medium-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-semibold-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-bold-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-extrabold-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-black-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+/* Main */
+
+main {
+    width: 100%;
+    height: 620px;
+    padding-top: 10rem;
+    background-color: black;
+}
+/* Pour le haut de la calculette */
+main div:nth-of-type(1) div:nth-of-type(1) {
+    display: grid;
+    width: auto;
+    justify-content: center;
+    border: 3px solid rgb(141, 202, 149);
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 40px;
+    column-gap: 10px;
+    row-gap: 100px;
+    background-color: #404B55;
+    color: #BCCFD8;
+    font-family: "Barlow Condensed";
+    font-size: x-large;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+/* Pour les bordures de la calculette */
+.border-top-radius {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* Pour les chiffres de 1 à 8 */
+main div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(1) {
+    display: grid;
+    justify-content: center;
+    width: auto;
+    border: 3px solid #A63949;
+    border-radius: 8px;
+    grid-template-columns: repeat(8, 10px);
+    grid-template-rows: 40px;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: #BCCFD8;
+    color: #0e1217;
+    font-family: "Barlow Condensed";
+    font-size: x-large;
+    text-align: center;
+    padding: 0.25rem;
+    margin: 1rem;
+}
+
+/* Pour l'arrière-plan de la case des chiffres de 1 à 8 */
+main div:nth-of-type(1) div:nth-of-type(2) {
+    border: 3px solid rgb(141, 202, 149);
+    background-color: #404B55;
+}
+
+/* Les boutons de la calculette */
+button {
+    font-family: "Barlow Condensed";
+    font-size: x-large;
+    border: 3px solid #c6bf10;
+    background-color: #0e1217;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Pour les boutons autres que les chiffres */
+.button-non-chiffres {
+    background-color: #0691B2;
+}
+
+/* Pour les boutons pour les opérations */
+.button-operations {
+    background-color: #A63949;
+}
+
+/* Pour le bouton C et AC */
+.button-C-AC {
+    background-color: #ADA384;
+}
+
+/* Pour le bouton local et euro */
+.button-local-euro {
+    background-color: #BCCFD8;
+    color: #0e1217;
+}
+
+/* Pour placer la première ligne des boutons de la calculette */
+main div:nth-of-type(2) div:nth-of-type(1) {
+    display: grid;
+    width: auto;
+    justify-content: center;
+    border: 3px solid rgb(141, 202, 149);
+    grid-template-columns: repeat(5,56px);
+    grid-template-rows: 40px;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: #4a5e6d;
+    font-family: "Barlow Condensed";
+    font-size: x-large;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+/* Pour placer les lignes suivantes des boutons de la calculette */
+main div:nth-of-type(2) div:nth-of-type(2) {
+    display: grid;
+    justify-content: center;
+    border: 3px solid rgb(141, 202, 149);
+    grid-template-columns: repeat(5,56px);
+    grid-template-rows: repeat(5, 50px);
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: #4a5e6d;
+    font-family: "Barlow Condensed";
+    font-size: x-large;
+    text-align: center;
+    padding: 0.25rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Pour toutes les div */
+main div {
+    display: grid;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+/* Pour le bouton + */
+.btnPlus {
+    height: 110px;
+    background-color: #A63949;
+}
+
+/* Pour centrer les divs au centre */
+.center {
+    align-items: center;
+    align-content: center;
+}
