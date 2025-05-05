@@ -206,7 +206,8 @@ button {
     display: grid;
     width: auto;
     justify-content: center;
-    border: 3px solid rgb(141, 202, 149);
+    border-right: 3px solid rgb(141, 202, 149);
+    border-left: 3px solid rgb(141, 202, 149);
     grid-template-columns: repeat(5,56px);
     grid-template-rows: 40px;
     column-gap: 10px;
@@ -222,7 +223,9 @@ button {
 .buttons2 {
     display: grid;
     justify-content: center;
-    border: 3px solid rgb(141, 202, 149);
+    border-left: 3px solid rgb(141, 202, 149);
+    border-right: 3px solid rgb(141, 202, 149);
+    border-bottom: 3px solid rgb(141, 202, 149);
     grid-template-columns: repeat(5,56px);
     grid-template-rows: repeat(5, 50px);
     column-gap: 10px;
