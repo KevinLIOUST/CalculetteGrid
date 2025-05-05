@@ -124,7 +124,9 @@ main {
     display: grid;
     width: auto;
     justify-content: center;
-    border: 3px solid rgb(141, 202, 149);
+    border-right: 3px solid rgb(141, 202, 149);
+    border-left: 3px solid rgb(141, 202, 149);
+    border-top: 3px solid rgb(141, 202, 149);
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 40px;
     column-gap: 10px;
