@@ -120,7 +120,7 @@ main {
     background-color: black;
 }
 /* Pour le haut de la calculette */
-main div:nth-of-type(1) div:nth-of-type(1) {
+.hautCalculette {
     display: grid;
     width: auto;
     justify-content: center;
@@ -144,7 +144,7 @@ main div:nth-of-type(1) div:nth-of-type(1) {
 }
 
 /* Pour les chiffres de 1 à 8 */
-main div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(1) {
+.chiffres {
     display: grid;
     justify-content: center;
     width: 250px;
@@ -164,7 +164,7 @@ main div:nth-of-type(1) div:nth-of-type(2) div:nth-of-type(1) {
 }
 
 /* Pour l'arrière-plan de la case des chiffres de 1 à 8 */
-main div:nth-of-type(1) div:nth-of-type(2) {
+.arrierePlanChiffres {
     border: 3px solid rgb(141, 202, 149);
     background-color: #404B55;
 }
@@ -202,7 +202,7 @@ button {
 }
 
 /* Pour placer la première ligne des boutons de la calculette */
-main div:nth-of-type(2) div:nth-of-type(1) {
+.buttonsLigne1 {
     display: grid;
     width: auto;
     justify-content: center;
@@ -219,7 +219,7 @@ main div:nth-of-type(2) div:nth-of-type(1) {
 }
 
 /* Pour placer les lignes suivantes des boutons de la calculette */
-main div:nth-of-type(2) div:nth-of-type(2) {
+.buttons2 {
     display: grid;
     justify-content: center;
     border: 3px solid rgb(141, 202, 149);
