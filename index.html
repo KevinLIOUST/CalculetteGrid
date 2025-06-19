@@ -24,15 +24,8 @@
 
             <!-- Chiffres ! :) -->
             <div class="arrierePlanChiffres">
-                <div class="chiffres center">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <p>4</p>
-                    <p>5</p>
-                    <p>6</p>
-                    <p>7</p>
-                    <p>8</p>
+                <div class="chiffres center" id="affichage">
+
                 </div>
             </div>
         </div>
@@ -55,29 +48,31 @@
                 <button class="button-non-chiffres">MR</button>
                 <button class="button-non-chiffres">M-</button>
                 <button class="button-non-chiffres">M+</button>
-                <button class="button-operations">&#xF7;</button>
+                <button class="button-operations" onclick="affichageOperateur('/')">&#xF7;</button>
                 <button class="button-non-chiffres">&#9658;</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="button-operations">&#xD7;</button>
+                <button onclick="affichageNombre(7)">7</button>
+                <button onclick="affichageNombre(8)">8</button>
+                <button onclick="affichageNombre(9)">9</button>
+                <button class="button-operations" onclick="affichageOperateur('*')">&#xD7;</button>
                 <button class="button-C-AC">C</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="button-operations">-</button>
+                <button onclick="affichageNombre(4)">4</button>
+                <button onclick="affichageNombre(5)">5</button>
+                <button onclick="affichageNombre(6)">6</button>
+                <button class="button-operations" onclick="affichageOperateur('-')">-</button>
                 <button class="button-C-AC">AC</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="btnPlus">+</button>
-                <button>0</button>
+                <button onclick="affichageNombre(1)">1</button>
+                <button onclick="affichageNombre(2)">2</button>
+                <button onclick="affichageNombre(3)">3</button>
+                <button class="btnPlus" onclick="affichageOperateur('+')">+</button>
+                <button onclick="affichageNombre(0)">0</button>
                 <button>00</button>
                 <button>.</button>
-                <button class="button-operations">=</button>
+                <button class="button-operations" onclick="calculerResultat()">=</button>
             </div>
         </div>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
