@@ -1,11 +1,25 @@
+// Fonction pour allumer la calculette
+function allumerCalculette() {
+  document.getElementById("affichage").innerText = 0;
+}
+
+// Fonction qui permet d'éteindre la calculette
+function eteindreCalculette() {
+  document.getElementById("affichage").innerText = '';
+}
+
 // Fonction qui permet d'afficher le nombre en question.
 function affichageNombre(nombre) {
-  document.getElementById("affichage").innerText += nombre;
+  if (document.getElementById("affichage").innerText.charAt(0) == '0') {
+    document.getElementById("affichage").innerText = nombre;
+  } else {
+    document.getElementById("affichage").innerText += nombre;
+  }
 }
 
 // Fonction qui va effacer le texte des chiffres
 function effacerTexte() {
-    document.getElementById("affichage").innerText = '';
+    document.getElementById("affichage").innerText = 0;
 }
 
 // Fonction qui va afficher les operateurs
