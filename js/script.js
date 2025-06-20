@@ -37,7 +37,6 @@ function calculerResultat() {
 
     // On récupère le texte de la calculette pour travailler dessus.
     let texte = document.getElementById("affichage").getHTML();
-    console.log(texte);
 
     // On parcours la chaîne de caractères pour trouver l'operateur.
     for (let i=0; i < texte.length; i++) {
@@ -65,7 +64,7 @@ function calculerResultat() {
         return resultat;
     } else if (operateur == '\u00D7') {
         resultat = nb1 * nb2;
-        document.getElementById("affichage").innerText = nb1 * nb2;
+        document.getElementById("affichage").innerText = resultat;
         return resultat;
     }
 }
