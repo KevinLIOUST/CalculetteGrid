@@ -57,6 +57,9 @@ function affichageOperateur(operateur) {
       case "-":
         document.getElementById("affichage").innerText += "-";
         break;
+      case ".":
+        document.getElementById("affichage").innerText += ".";
+        break;
     }
   }
 }
@@ -66,6 +69,7 @@ function calculerResultat() {
   // Ingrediants
   let resultat = 0;
   let operateur = "";
+  let operateurPoint = ".";
   let nb1 = 0;
   let nb2 = 0;
 
@@ -74,15 +78,38 @@ function calculerResultat() {
 
   // On parcours la chaîne de caractères pour trouver l'operateur.
   for (let i = 0; i < texte.length; i++) {
-    if (isNaN(texte.charAt(i))) {
+    if (isNaN(texte.charAt(i)) && texte.charAt(i) != ".") {
       operateur = texte.charAt(i);
+      console.log(operateur);
     }
   }
 
   let tabNombres = texte.split(operateur);
+  // let tabNombresFloat = texte.split(operateurPoint);
 
-  nb1 = parseInt(tabNombres[0]);
-  nb2 = parseInt(tabNombres[1]);
+  nb1 = parseFloat(tabNombres[0]);
+  nb2 = parseFloat(tabNombres[1]);
+
+  console.log(nb1);
+  console.log(nb2);
+
+  nb1.toString();
+  nb2.toString();
+
+  for (let i=0; i < nb1.length; i++) {
+    if (operateurPoint == "") {
+      parseInt(nb1);
+    }
+  }
+
+  for (let i=0; i < nb2.length; i++) {
+    if (operateurPoint == "") {
+      parseInt(nb2);
+    }
+  }
+
+  console.log(nb1);
+  console.log(nb2);
 
   if (operateur == "+") {
     resultat = nb1 + nb2;
@@ -94,8 +121,12 @@ function calculerResultat() {
     return resultat;
   } else if (operateur == "\u00F7") {
     resultat = nb1 / nb2;
-    document.getElementById("affichage").innerText = resultat;
-    return resultat;
+    if (nb2 == 0) {
+      console.log("Impossible de diviser par 0 ! ):");
+    } else {
+      document.getElementById("affichage").innerText = resultat;
+      return resultat;
+    }
   } else if (operateur == "\u00D7") {
     resultat = nb1 * nb2;
     document.getElementById("affichage").innerText = resultat;
