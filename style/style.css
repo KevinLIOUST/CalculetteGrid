@@ -120,7 +120,7 @@
 main {
     width: auto;
     height: auto;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     background-color: white;
 }
 /* Pour le haut de la calculette */
